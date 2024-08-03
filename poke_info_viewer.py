@@ -37,6 +37,7 @@ def get_info():
 # Create the main window
 root = Tk()
 root.title("Pokemon Information Viewer")
+root.geometry("600x400")
 root.resizable(False, False)
 
 # Create the frames
@@ -47,7 +48,7 @@ frame_info1 = ttk.LabelFrame(root, text="Info")
 frame_info1.grid(row=1, column=0, padx=(20,10), pady=(10,20), sticky=N)
 
 frame_stats1 = ttk.LabelFrame(root, text="Stats")
-frame_stats1.grid(row=1, column=1, padx=(10,20), pady=(10,20), sticky=N)
+frame_stats1.grid(row=1, column=1, padx=(15,10), pady=(10,15), sticky=N)
 
 # Populate the user input frame with widgets
 lbl_name = ttk.Label(frame_input1, text='Pokemon Name')
